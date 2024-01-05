@@ -30,8 +30,7 @@ const Forecast = ({data}) => {
                                          src={`../../icons/${item.weather[0].icon}.png`}/>
                                     <label className={css.day}>{forecastDays[idx]} {item.dt_txt.slice(8,10)}</label>
                                     <label className={css.description}>{item.weather[0].description}</label>
-                                    <label className={css.minMax}>{Math.round(item.main.temp_min)}°C
-                                        - {Math.round(item.main.temp_max)}°C</label>
+                                    <label className={css.minMax}>{Math.round(item.main.temp_min)}°C</label>
                                 </div>
                             </AccordionItemButton>
                         </AccordionItemHeading>
